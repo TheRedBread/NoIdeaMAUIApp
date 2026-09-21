@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NoIdeaMAUIApp.Controls.navbar">
+    <VerticalStackLayout BackgroundColor="{StaticResource Surface}" Padding="10" Margin="0">
+    <Grid
+        ColumnDefinitions="*,*,*,*,*"
+        Padding="5,0">
+    
+        <Button
+            Padding="{StaticResource SpaceXXS}"
+            ContentLayout="Top,4"
+            Text="Dni"
+            Grid.Column="0"
+            ImageSource="calendar.png"
+            Style="{StaticResource SecondaryButton}"
+            BorderColor="{StaticResource Surface}"
+            BackgroundColor="{StaticResource Surface}"/>
+
+        <Button
+            Padding="{StaticResource SpaceXXS}"
+            ContentLayout="Top,4"
+            Text="Kolekcje"
+            Grid.Column="1"
+            ImageSource="menu.png"
+            Style="{StaticResource SecondaryButton}"
+            BorderColor="{StaticResource Surface}"
+            BackgroundColor="{StaticResource Surface}"/>
+
+        <Button
+            Padding="{StaticResource SpaceXXS}"
+            Text="Dziś"
+            Grid.Column="2"
+            ImageSource="plus.png" 
+            CornerRadius="30"/>
+
+        <Button
+            Padding="{StaticResource SpaceXXS}"
+            ContentLayout="Top,4"
+            Text="Tablica"
+            Grid.Column="3"
+            ImageSource="squares.png"
+            Style="{StaticResource SecondaryButton}"
+            BorderColor="{StaticResource Surface}"
+            BackgroundColor="{StaticResource Surface}"/>
+ 
+        <Button
+            Padding="{StaticResource SpaceXXS}"
+            ContentLayout="Top,4"
+            Text="Ja"
+            Grid.Column="4"
+            ImageSource="user.png"
+            Style="{StaticResource SecondaryButton}"
+            BorderColor="{StaticResource Surface}" 
+            BackgroundColor="{StaticResource Surface}"/>
+
+    </Grid>
+    </VerticalStackLayout>
+</ContentView>
