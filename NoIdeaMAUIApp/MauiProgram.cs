@@ -13,6 +13,10 @@ namespace NoIdeaMAUIApp
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                    fonts.AddFont("Literata-SemiBold.ttf", "LiterataSemiBold");
+                    fonts.AddFont("IBMPlexSans-Regular.ttf", "PlexSansRegular");
+                    fonts.AddFont("IBMPlexSans-Medium.ttf", "PlexSansMedium");
+                    fonts.AddFont("IBMPlexMono-Medium.ttf", "PlexMonoMedium");
                 });
 
 #if DEBUG
