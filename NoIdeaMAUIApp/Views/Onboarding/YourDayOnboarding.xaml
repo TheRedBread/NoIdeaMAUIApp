@@ -86,15 +86,17 @@
                             HorizontalOptions="Fill"
                             VerticalOptions="Center">
                             <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto" />
                                 <ColumnDefinition Width="*" />
-                                <ColumnDefinition Width="*" />
-                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="auto" />
                             </Grid.ColumnDefinitions>
                             <Border
                                 Grid.Column="0"
                                 Style="{StaticResource PlayButtonBorder}">
-                                <ImageButton
-                                    Source="playicon.png"/>
+                                <Button
+                                    WidthRequest="30"
+                                    HeightRequest="30"
+                                    ImageSource="play.png"/>
                             </Border>
                             <BoxView
                                 HeightRequest="2"
