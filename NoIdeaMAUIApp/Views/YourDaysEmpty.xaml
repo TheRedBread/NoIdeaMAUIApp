@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:NoIdeaMAUIApp.Controls"
+             x:Class="NoIdeaMAUIApp.Views.YourDaysEmpty"
+             Title="YourDaysEmpty">
+    <Grid RowDefinitions="*,Auto">
+        <controls:GridBackground />
+        <ScrollView Grid.Row="0">
+            <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+                <controls:toppart/>
+                <Border Style="{StaticResource Card}"
+                        HorizontalOptions="Fill">
+                    <VerticalStackLayout Spacing="10">
+                        <Image Source="calendar.png"
+                                   HorizontalOptions="Fill"
+                                   VerticalOptions="Fill"
+                                   WidthRequest="30"
+                                   HeightRequest="30"
+                                   Aspect="AspectFit"/>
+                            <!--fix image now-->
+                        <Label
+                            Text="Nic tu jeszcze nie ma"
+                            Style="{StaticResource Heading}"
+                            HorizontalOptions="Center"/>
+                        <Label Text="Wprowadź pierwszy wpis — jedno zdanie, głosówka albo zdjęcie. Dzień zapisze się sam, resztę dodasz kiedy chcesz."
+                               HorizontalOptions="Center"
+                               Style="{StaticResource Body}"/>
+                        <Button Text="Zapisz Dzisiejszy Dzień"
+                                CornerRadius="10"/>
+                    </VerticalStackLayout>
+                </Border>
+                <Border Style="{StaticResource Card}"
+                        HorizontalOptions="Fill">
+                    <VerticalStackLayout Spacing="10">
+
+                        <Label Text="Na start przygotowaliśmy"
+                                HorizontalOptions="Center"
+                                Style="{StaticResource Body}"/>
+                        <HorizontalStackLayout>
+                            <Border Style="{StaticResource PillBorder}">
+                                <Label Text="Glikemia"
+                                       HorizontalOptions="Center"
+                                       VerticalOptions="Center"
+                                       Style="{StaticResource Body}"
+                                       TextColor="{StaticResource Accent}"/>
+                            </Border>
+                            <Border Style="{StaticResource PillBorder}">
+                                <Label Text="Waga"
+                                       HorizontalOptions="Center"
+                                       VerticalOptions="Center"
+                                       Style="{StaticResource Body}"
+                                       TextColor="{StaticResource Accent}"/>
+                            </Border>
+                            <Border Style="{StaticResource PillBorder}">
+                                <Label Text="Nastrój"
+                                           HorizontalOptions="Center"
+                                           VerticalOptions="Center"
+                                           Style="{StaticResource Body}"
+                                           TextColor="{StaticResource Accent}"/>
+                            </Border>
+                            <Border Style="{StaticResource PillBorder}">
+                                <Label Text="Szybka Notka"
+                                       HorizontalOptions="Center"
+                                       VerticalOptions="Center"
+                                       Style="{StaticResource Body}"
+                                       TextColor="{StaticResource Accent}"/>
+                            </Border>
+                        </HorizontalStackLayout>
+                        <Label Text="Zobacz wszystkie kolekcje"
+                               Style="{StaticResource Body}"
+                               TextColor="{StaticResource Accent}"/>
+                    </VerticalStackLayout>
+                </Border>
+            </VerticalStackLayout>
+        </ScrollView>
+        <controls:navbar Grid.Row="1"/>
+    </Grid>
+</ContentPage>

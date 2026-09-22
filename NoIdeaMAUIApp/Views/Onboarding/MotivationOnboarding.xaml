@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NoIdeaMAUIApp.Views.Onboarding.MotivationOnboarding"
+                xmlns:controls="clr-namespace:NoIdeaMAUIApp.Controls"
+             Title="MotivationOnboarding">
+    <Grid>
+        <controls:GridBackground />
+        <Grid Padding="24,16,24,24"
+                RowDefinitions="*,Auto">
+            <VerticalStackLayout Grid.Row="0">
+                <Label Text="Jak mam się przypominać?" 
+                       Style="{StaticResource Title}"/>
+                <Label Text="Wybierz ton. Zmienisz go kiedy chcesz, a godziny ciszy ustawimy za moment."
+                       Style="{StaticResource Body}"/>
+                <Border Style="{StaticResource Card}"
+                        HorizontalOptions="Fill">
+                    <Grid ColumnSpacing="8"
+                          HorizontalOptions="Fill"
+                          ColumnDefinitions="Auto, *"
+                          RowDefinitions="*,*"
+                          RowSpacing="10">
+                        <RadioButton
+                            Grid.Column="0"
+                            GroupName="MotivationTone"
+                            Value="Motywator"
+                            IsChecked="False"/>
+                        <Label Text="Motywator"
+                               Style="{StaticResource Title}"
+                               Grid.Column="1"/>
+                        <Label Text="„Trzy dni z rzędu — dorzucisz dzisiejszą wagę?”"
+                               Style="{StaticResource Body}"
+                               Grid.Column="1"
+                               Grid.Row="1"/>
+                    </Grid>
+                </Border>
+                <Border Style="{StaticResource Card}"
+                        HorizontalOptions="Fill">
+                    <Grid ColumnSpacing="8"
+                          HorizontalOptions="Fill"
+                          ColumnDefinitions="Auto, *"
+                          RowDefinitions="*,*"
+                          RowSpacing="10">
+                        <RadioButton
+                            Grid.Column="0"
+                            GroupName="MotivationTone"
+                            IsChecked="true"/>
+                        <HorizontalStackLayout 
+                               Grid.Column="1">
+                            <Label Text="Spojojnie"
+                               Style="{StaticResource Title}"/>
+                            <Border Style="{StaticResource PillBorder}">
+                                <Label Text="domyślne"
+                                       HorizontalOptions="Center"
+                                       VerticalOptions="Center"
+                                       Style="{StaticResource Caption}"
+                                       TextColor="{StaticResource Accent}"/>
+                            </Border>
+                        </HorizontalStackLayout>
+                        <Label Text="„Jeśli masz chwilę — zapisz dzisiejszy pomiar.”"
+                               Style="{StaticResource Body}"
+                               Grid.Column="1"
+                               Grid.Row="1"/>
+                    </Grid>
+                </Border>
+                <Border Style="{StaticResource Card}"
+                        HorizontalOptions="Fill">
+                    <Grid ColumnSpacing="8"
+                          HorizontalOptions="Fill"
+                          ColumnDefinitions="Auto, *"
+                          RowDefinitions="*,*"
+                          RowSpacing="10">
+                        <RadioButton
+                                Grid.Column="0"
+                                GroupName="MotivationTone"
+                                IsChecked="False"/>
+                        <Label Text="Cisza"
+                               Style="{StaticResource Title}"
+                               Grid.Column="1"/>
+                        <Label Text="Zero powiadomień. Wracasz, kiedy sam chcesz."
+                               Style="{StaticResource Body}"
+                               Grid.Column="1"
+                               Grid.Row="1"/>
+                    </Grid>
+                </Border>
+            </VerticalStackLayout>
+            <Button Text="Zaczynamy"
+                    Grid.Row="1"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="End"/>
+        </Grid>
+    </Grid>
+
+</ContentPage>

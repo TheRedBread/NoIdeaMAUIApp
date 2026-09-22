@@ -511,7 +511,16 @@
             </Setter.Value>
         </Setter>
     </Style>
-    
+
+    <Style TargetType="Border" x:Key="PillBorder">
+        <Setter Property="Padding" Value="10" />
+        <Setter Property="StrokeShape">
+            <Setter.Value>
+                <RoundRectangle CornerRadius="{StaticResource RadiusPill}" />
+            </Setter.Value>
+        </Setter>
+        <Setter Property="BackgroundColor" Value="{StaticResource AccentLight}" />
+    </Style>
     <!-- ========================================================= -->
     <!-- Semantic text styles                                        -->
     <!-- ========================================================= -->
