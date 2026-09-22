@@ -75,15 +75,18 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiImage Include="Resources\Images\icons\calendar.png" BaseSize="30,30" TintColor="#55683A"/>
+	  <MauiImage Include="Resources\Images\icons\calendar.png" BaseSize="30,30" TintColor="#55683A" />
 	  <MauiImage Include="Resources\Images\icons\menu.png" BaseSize="30,30" TintColor="#55683A" />
 	  <MauiImage Include="Resources\Images\icons\plus.png" BaseSize="30,30" TintColor="#FFFFFF" />
-	  <MauiImage Include="Resources\Images\icons\squares.png" BaseSize="30,30" TintColor="#55683A"/>
-	  <MauiImage Include="Resources\Images\icons\user.png" BaseSize="30,30" TintColor="#55683A"/>
+	  <MauiImage Include="Resources\Images\icons\squares.png" BaseSize="30,30" TintColor="#55683A" />
+	  <MauiImage Include="Resources\Images\icons\user.png" BaseSize="30,30" TintColor="#55683A" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <MauiXaml Update="Controls\navbar.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Controls\toppart.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Resources\Styles\ComponentStyles.xaml">
@@ -96,6 +99,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Onboarding\YourDayOnboarding.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\YourDaysEmpty.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
