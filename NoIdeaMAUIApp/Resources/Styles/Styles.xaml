@@ -285,9 +285,21 @@
         <Setter Property="LineHeight" Value="{StaticResource LabelLineHeight}" />
     </Style>
 
+    <Style TargetType="Label" x:Key="Heading">
+        <Setter Property="TextColor" Value="{StaticResource Text}" />
+        <Setter Property="FontFamily" Value="{StaticResource HeadingFontFamily}" />
+        <Setter Property="FontSize" Value="{StaticResource HeadingFontSize}" />
+        <Setter Property="LineHeight" Value="{StaticResource HeadingLineHeight}" />
+    </Style>
+
     <!-- ========================================================= -->
-    <!-- Image buttons / icon buttons                                -->
+    <!-- Image / icons                                              -->
     <!-- ========================================================= -->
+
+    <Style TargetType="Image">
+        <Setter Property="MinimumHeightRequest" Value="{StaticResource TouchMin}" />
+        <Setter Property="MinimumWidthRequest" Value="{StaticResource TouchMin}" />
+    </Style>
 
     <Style TargetType="ImageButton">
         <Setter Property="Opacity" Value="1" />
@@ -489,6 +501,17 @@
         </Setter>
     </Style>
 
+    <Style TargetType="Border" x:Key="ImageBorder">
+        <Setter Property="Padding" Value="0" />
+        <Setter Property="MinimumHeightRequest" Value="{StaticResource TouchMin}" />
+        <Setter Property="MinimumWidthRequest" Value="{StaticResource TouchMin}" />
+        <Setter Property="StrokeShape">
+            <Setter.Value>
+                <RoundRectangle CornerRadius="{StaticResource RadiusMD}" />
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
     <!-- ========================================================= -->
     <!-- Semantic text styles                                        -->
     <!-- ========================================================= -->
@@ -517,6 +540,18 @@
         <Setter Property="VerticalTextAlignment" Value="Center" />
         <Setter Property="WidthRequest" Value="{StaticResource TouchMin}" />
         <Setter Property="HeightRequest" Value="{StaticResource TouchMin}" />
+    </Style>
+
+    <!-- ========================================================= -->
+    <!-- Stack Layouts                                              -->
+    <!-- ========================================================= -->
+
+    <Style TargetType="VerticalStackLayout">
+        <Setter Property="Spacing" Value="{StaticResource SpaceSM}"/>
+    </Style>
+
+    <Style TargetType="HorizontalStackLayout">
+        <Setter Property="Spacing" Value="{StaticResource SpaceSM}"/>
     </Style>
 
 </ResourceDictionary>
