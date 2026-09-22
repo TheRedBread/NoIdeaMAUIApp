@@ -35,7 +35,7 @@
                 <Border Style="{StaticResource Card}"
                         HorizontalOptions="Fill">
                     <VerticalStackLayout Spacing="10">
-                        
+
                         <Label Text="Na start przygotowaliśmy"
                                 HorizontalOptions="Center"
                                 Style="{StaticResource Body}"/>
