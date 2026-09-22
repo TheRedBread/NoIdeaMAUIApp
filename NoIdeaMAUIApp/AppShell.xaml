@@ -9,7 +9,7 @@
     Title="NoIdeaMAUIApp">
 
     <ShellContent
-        ContentTemplate="{DataTemplate views:YourDaysEmpty}"
+        ContentTemplate="{DataTemplate views:YourDaysFilled}"
         Route="MainPage" />
 
 </Shell>
