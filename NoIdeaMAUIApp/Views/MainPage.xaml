@@ -5,9 +5,9 @@
              x:Class="NoIdeaMAUIApp.Views.MainPage">
 
 
-    <Grid>
+    <Grid RowDefinitions="*,Auto">
         <controls:GridBackground />
-        <ScrollView>
+        <ScrollView Grid.Row="0">
             <VerticalStackLayout
                 Padding="30,0"
                 Spacing="25">
@@ -27,5 +27,6 @@
                     Text="Button"/>
             </VerticalStackLayout>
         </ScrollView>
+        <controls:navbar Grid.Row="1"/>
     </Grid>
 </ContentPage>
