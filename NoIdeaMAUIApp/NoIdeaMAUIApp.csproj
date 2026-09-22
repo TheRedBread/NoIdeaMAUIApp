@@ -66,6 +66,15 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\icons\app.png" />
+	  <None Remove="Resources\Images\icons\check.png" />
+	  <None Remove="Resources\Images\icons\notes.png" />
+	  <None Remove="Resources\Images\icons\stats.png" />
+	  <None Remove="Resources\Images\icons\top.png" />
+	  <None Remove="Resources\Styles\play.png" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="10.0.0" />
 	</ItemGroup>
@@ -75,11 +84,17 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiImage Include="Resources\Images\icons\app.png" BaseSize="30,30" TintColor="#55683A" />
 	  <MauiImage Include="Resources\Images\icons\calendar.png" BaseSize="30,30" TintColor="#55683A" />
+	  <MauiImage Include="Resources\Images\icons\check.png" BaseSize="30,30" TintColor="#FFFFFF" Resize="true" />
 	  <MauiImage Include="Resources\Images\icons\menu.png" BaseSize="30,30" TintColor="#55683A" />
+	  <MauiImage Include="Resources\Images\icons\notes.png" TintColor="#55683A" Resize="true" />
 	  <MauiImage Include="Resources\Images\icons\plus.png" BaseSize="30,30" TintColor="#FFFFFF" />
-	  <MauiImage Include="Resources\Images\icons\squares.png" BaseSize="30,30" TintColor="#55683A" />
+	  <MauiImage Include="Resources\Images\icons\squares.png" TintColor="#55683A" Resize="true" />
+	  <MauiImage Include="Resources\Images\icons\stats.png" TintColor="#55683A" Resize="true" />
+	  <MauiImage Include="Resources\Images\icons\top.png" TintColor="#55683A" Resize="true" />
 	  <MauiImage Include="Resources\Images\icons\user.png" BaseSize="30,30" TintColor="#55683A" />
+	  <MauiImage Include="Resources\Images\icons\play.png" TintColor="#FFFFFF" Resize="true" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -99,6 +114,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Onboarding\MotivationOnboarding.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </MauiXaml>
+	  <MauiXaml Update="Views\Onboarding\reasonOnboarding.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Onboarding\YourDayOnboarding.xaml">

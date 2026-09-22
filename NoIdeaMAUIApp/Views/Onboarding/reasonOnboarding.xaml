@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:controls="clr-namespace:NoIdeaMAUIApp.Controls"
+             x:Class="NoIdeaMAUIApp.Views.Onboarding.reasonOnboarding"
+             Title="reasonOnboarding">
+
+    <Grid>
+        <controls:GridBackground />
+        <Grid
+            Padding="24,16,24,24"
+            RowDefinitions="Auto,*,Auto"
+            RowSpacing="{StaticResource SpaceSM}">
+
+            <VerticalStackLayout Spacing="{StaticResource SpaceSM}">
+
+                <Label 
+                    Text="Po co chcesz to prowadzić?"
+                    Style="{StaticResource Heading}"/>
+                <Label
+                    Text="Na tej podstawie przygotujemy pierwsze kolekcje i ton apki. Wszystko zmienisz później — nic tu nie jest na zawsze."
+                    Style="{StaticResource Body}"
+                    TextColor="{StaticResource TextMuted}"/>
+
+                <Grid ColumnDefinitions="*,*" ColumnSpacing="10" RowDefinitions="Auto,Auto" RowSpacing="10">
+
+                    <Border Grid.Row="0" Grid.Column="0" Style="{StaticResource OptionCardStyle}">
+                        <VerticalStackLayout Spacing="8">
+                            <Image Source="notes.png" Style="{StaticResource OptionCardIconStyle}" />
+                            <Label Text="Pamiętnik" Style="{StaticResource OptionCardTitleStyle}" />
+                            <Label Text="Tekst, głosówki, zdjęcia. Zero liczb, jeśli nie chcesz." Style="{StaticResource OptionCardDescStyle}" />
+                        </VerticalStackLayout>
+                    </Border>
+
+                    <Border Grid.Row="0" Grid.Column="1" Style="{StaticResource OptionCardSelectedStyle}">
+                        <VerticalStackLayout Spacing="8">
+                            <Grid
+                                ColumnDefinitions="auto,*,auto">
+                                <Image Source="stats.png" Style="{StaticResource OptionCardIconStyle}" Grid.Column="0"/>
+                                <Border Style="{StaticResource OkayBorder}" Grid.Column="2" BackgroundColor="{StaticResource Accent}">
+                                    <Image Source="check.png"  Scale="0.5"/>
+                                </Border>
+                            </Grid>
+                            <Label Text="Obserwuję zdrowie" Style="{StaticResource OptionCardTitleStyle}" />
+                            <Label Text="Glikemia, waga, ciśnienie, leki. Wykresy i raport dla lekarza." Style="{StaticResource OptionCardDescStyle}" />
+                        </VerticalStackLayout>
+                    </Border>
+
+                    <Border Grid.Row="1" Grid.Column="0" Style="{StaticResource OptionCardStyle}">
+                        <VerticalStackLayout Spacing="8">
+                            <Image Source="top.png" Style="{StaticResource OptionCardIconStyle}" />
+                            <Label Text="Dziennik motywacyjny" Style="{StaticResource OptionCardTitleStyle}" />
+                            <Label Text="Nawyki, trening, postępy. Serie widoczne, ale bez krzyku." Style="{StaticResource OptionCardDescStyle}" />
+                        </VerticalStackLayout>
+                    </Border>
+
+                    <Border Grid.Row="1" Grid.Column="1" Style="{StaticResource OptionCardOtherStyle}">
+                        <VerticalStackLayout Spacing="8">
+                            <Image Source="squares.png" Style="{StaticResource OptionCardIconStyle}" />
+                            <Label Text="Po swojemu" Style="{StaticResource OptionCardTitleStyle}" />
+                            <Label Text="Pusto na start. Kolekcje i pola definiujesz sam." Style="{StaticResource OptionCardDescStyle}" />
+                        </VerticalStackLayout>
+                    </Border>
+
+                </Grid>
+
+            </VerticalStackLayout>
+            <VerticalStackLayout Grid.Row="2" Spacing="{StaticResource SpaceXS}">
+
+                <Button
+                    Text="Dalej"
+                    HeightRequest="52"
+                    FontFamily="{StaticResource LabelFontFamily}"/>
+
+                <Button
+                    Style="{StaticResource TextButton}"
+                    Text="Zdecyduje Później"
+                    TextColor="{StaticResource TextMuted}"
+                    FontFamily="{StaticResource LabelFontFamily}"
+                    FontSize="{StaticResource BodyFontSize}"/>
+
+            </VerticalStackLayout>
+        </Grid>
+    </Grid>
+
+</ContentPage>
