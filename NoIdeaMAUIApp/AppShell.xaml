@@ -8,8 +8,22 @@
     xmlns:views.onboarding="clr-namespace:NoIdeaMAUIApp.Views.Onboarding"
     Title="NoIdeaMAUIApp">
 
-    <ShellContent
-        ContentTemplate="{DataTemplate views.onboarding:MotivationOnboarding}"
-        Route="MainPage" />
+    <TabBar>
+        <Tab Title="MotivationOnboarding">
+            <ShellContent ContentTemplate="{DataTemplate views.onboarding:MotivationOnboarding}" />
+        </Tab>
+        <Tab Title="reasonOnboarding">
+            <ShellContent ContentTemplate="{DataTemplate views.onboarding:reasonOnboarding}" />
+        </Tab>
+        <Tab Title="YourDayOnboarding">
+            <ShellContent ContentTemplate="{DataTemplate views.onboarding:YourDayOnboarding}" />
+        </Tab>
+        <Tab Title="YourDaysEmpty">
+            <ShellContent ContentTemplate="{DataTemplate views:YourDaysEmpty}" />
+        </Tab>
+        <Tab Title="YourDaysFilled">
+            <ShellContent ContentTemplate="{DataTemplate views:YourDaysFilled}" />
+        </Tab>
+    </TabBar>
 
 </Shell>

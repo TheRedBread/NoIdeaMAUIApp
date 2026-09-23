@@ -88,13 +88,13 @@
 	  <MauiImage Include="Resources\Images\icons\calendar.png" BaseSize="30,30" TintColor="#55683A" />
 	  <MauiImage Include="Resources\Images\icons\check.png" BaseSize="30,30" TintColor="#FFFFFF" Resize="true" />
 	  <MauiImage Include="Resources\Images\icons\menu.png" BaseSize="30,30" TintColor="#55683A" />
-	  <MauiImage Include="Resources\Images\icons\notes.png" TintColor="#55683A" Resize="true" />
+	  <MauiImage Include="Resources\Images\icons\notes.png" BaseSize="30,30" TintColor="#55683A" Resize="true" />
 	  <MauiImage Include="Resources\Images\icons\plus.png" BaseSize="30,30" TintColor="#FFFFFF" />
-	  <MauiImage Include="Resources\Images\icons\squares.png" TintColor="#55683A" Resize="true" />
-	  <MauiImage Include="Resources\Images\icons\stats.png" TintColor="#55683A" Resize="true" />
-	  <MauiImage Include="Resources\Images\icons\top.png" TintColor="#55683A" Resize="true" />
+	  <MauiImage Include="Resources\Images\icons\squares.png" BaseSize="30,30" TintColor="#55683A" Resize="true" />
+	  <MauiImage Include="Resources\Images\icons\stats.png" BaseSize="30,30" TintColor="#55683A" Resize="true" />
+	  <MauiImage Include="Resources\Images\icons\top.png" BaseSize="30,30" TintColor="#55683A" Resize="true" />
 	  <MauiImage Include="Resources\Images\icons\user.png" BaseSize="30,30" TintColor="#55683A" />
-	  <MauiImage Include="Resources\Images\icons\play.png" TintColor="#FFFFFF" Resize="true" />
+	  <MauiImage Include="Resources\Images\icons\play.png" BaseSize="30,30" TintColor="#FFFFFF" Resize="true" />
 	</ItemGroup>
 
 	<ItemGroup>
